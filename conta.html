@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>conta</title>
+    <link rel="stylesheet" href="conta.css">
+</head>
+<body>
+    <div class="divtotal">
+        <div class="container">
+            <h1>criar nova conta</h1>
+            <p>nome</p>
+            <input type="text" size="60px" style="height:25px;">
+            <p>cpf</p>
+            <form name="cadastro">
+                <input type="text" name="cpf" size="60px" style="height:25px;" \
+                    pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \
+                    title="Digite um CPF no formato: xxx.xxx.xxx-xx">
+            </form>
+            <p>email</p>
+            <input type="email" name="email" id="email" size="60px" style="height:25px;">
+            <p>senha</p>
+            <input type="password" name="isenha" id="isenha" size="60px" style="height:25px;">
+            <p>idade</p>
+            <input type="date" name="idata" id="idata" size="60px" style="height:25px;">
+            <p id="pgenero">genero</p>
+            <select name="iselct" id="select"  style="height: 28px;">
+                <option value="homem">homem</option>
+                <option value="mulher">mulher</option>
+                <option value="outros">outros</option>
+            </select>
+            <div class="divcheckbox">
+            <input type="checkbox" name="icheckbox" id="icheckbox">
+            </div>
+            <p id="ptermos">eu aceito os termos de uso</p>
+            <button>criar conta</button>
+        </div>
+    </div>
+    
+</body>
+</html>
